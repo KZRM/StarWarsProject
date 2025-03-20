@@ -1,0 +1,496 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+    margin: 0px;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.HoloContainer {
+    border: 2px solid rgba(203, 250, 244, 0.89);
+    background-color: rgb(0, 35, 51);
+    border-radius: 12px;
+    color: white;
+    box-shadow: inset 0 0 10px rgba(203, 250, 244, 0.89), 0 0 10px rgba(203, 250, 244, 0.89);
+}
+
+.screenContainer {
+    background-color: rgba(0, 174, 255, 0.082);
+    box-shadow: inset 0px 0px 10px -5px #ffffff87;
+    display: flex;
+    padding: 24px;
+    border-radius: 36px;
+    border: 2px solid rgba(255, 255, 255, 0.075);
+}
+
+header {
+    flex: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: rgb(255, 184, 0);
+    background: -moz-linear-gradient(0deg, rgba(255, 184, 0, 0) 0%, rgba(255, 184, 0, 0.12648809523809523) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 184, 0, 0) 0%, rgba(255, 184, 0, 0.12648809523809523) 100%);
+    background: linear-gradient(0deg, rgba(255, 184, 0, 0) 0%, rgba(255, 184, 0, 0.12648809523809523) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb800", endColorstr="#ffb800", GradientType=1);
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+    /* Lidt en hacky løsning men kunne ikke fikse overflow rodårsagen*/
+    width: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    flex: 1;
+    border: 2px solid #9fd9e7;
+    width: Calc(25%);
+    min-width: 200px;
+    transition: all 1s ease;
+}
+
+li:hover {
+    flex: 1.2;
+}
+
+nav a {
+    background: linear-gradient(180deg, rgb(0 192 255 / 20%) 0%, rgb(0 216 220 / 33%) 50%, rgba(0, 176, 231, 0.17130602240896353) 100%);
+    padding: 12px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 20px rgb(255, 255, 255, 1);
+}
+
+.infoList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infoContainer {
+    flex: 1;
+    min-width: 33.333333%;
+    max-width: 33.333333%;
+    opacity: 0.7;
+    transition: all 0.6s ease;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255, 0.5);
+}
+
+.infoContainer:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.infoContainer p {
+    font-size: 1.15em;
+    margin: 0px 0px 8px 8px;
+}
+
+.infoContainer h3 {
+    margin: 10px 0px 10px 8px;
+}
+
+
+.infoContainerInner {
+    padding: 12px 24px;
+    margin: 12px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.infoContainerInner button {
+    padding: 12px;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #43f6f6;
+    box-shadow: 0px 0px 10px 3px #7affff, inset 0px 0px 10px 3px #7affff;
+    border: 2px solid #ffffff66;
+    color: #0e1e3a;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    opacity: .5;
+}
+
+.infoContainerInner button:hover {
+    opacity: 1;
+    background-color: #aefeff;
+    box-shadow: 0px 0px 10px 3px #7affff, inset 0px 0px 10px 0px #7affff;
+    border: 2px solid #ffffff;
+    color: #0e1e3a;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+#Wrapper {
+    flex: 1;
+    width: Calc(100% - 4px)48;
+    max-width: 1200px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    backdrop-filter: blur(10px);
+}
+
+main {
+    width: 100%;
+}
+
+.contentBoxScale {
+    min-height: 600px;
+}
+
+.PaginationToolbar button,
+.PaginationToolbar select {
+    color: rgba(8, 11, 53, 0.767);
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 1px rgb(149, 225, 255), inset 0px 0px 5px 1px rgb(149, 225, 255);
+    border: none;
+    padding: 4px 8px;
+    margin-left: 8px;
+    border-radius: 12px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: inset 0px 0px 2px rgb(255, 255, 255, 1);
+    transition: all .5s ease-in-out;
+    opacity: 1;
+
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px 1px rgb(149, 225, 255), inset 0px 0px 8px 1px rgb(149, 225, 255);
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255, 0);
+    cursor: default;
+}
+
+path {
+    fill: rgb(255 204 0);
+    filter: drop-shadow(0px 0px 3px rgb(255, 143, 16)) drop-shadow(0px 0px 1px rgb(255, 143, 16));
+}
+
+
+.sectionTitle {
+    padding: 0px 36px;
+    padding-bottom: 24px;
+    background: rgb(0, 255, 209);
+    background: rgb(0, 255, 209);
+    background: -moz-linear-gradient(180deg, rgba(0, 255, 209, 0.4962359943977591) 0%, rgba(0, 216, 220, 0.3449754901960784) 23%, rgba(0, 176, 231, 0.17130602240896353) 58%, rgba(0, 91, 255, 0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 255, 209, 0.4962359943977591) 0%, rgba(0, 216, 220, 0.3449754901960784) 23%, rgba(0, 176, 231, 0.17130602240896353) 58%, rgba(0, 91, 255, 0) 100%);
+    background: linear-gradient(180deg, rgb(0 192 255 / 40%) 0%, rgb(0 216 220 / 33%) 23%, rgba(0, 176, 231, 0.17130602240896353) 58%, rgba(0, 91, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffd1", endColorstr="#005bff", GradientType=1);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.sectionTitle h1 {
+    font-size: 48px;
+    margin: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.PaginationToolbar {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+
+
+input {
+
+    flex: 1;
+
+    width: 30%;
+
+    height: 100%;
+
+    background-color: #0f1520;
+
+    border: 1px solid white;
+
+    border-radius: 8px;
+
+    color: white;
+
+    padding: 0px 12px;
+}
+
+
+@media (max-width: 1000px) {
+    .infoContainer {
+        flex: 1;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    li {
+        min-width: 40vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .infoContainer {
+        flex: 1;
+        min-width: Calc(100% - 24px);
+        max-width: Calc(100% - 24px);
+    }
+
+    li {
+        min-width: 80vw;
+    }
+}
+
+
+
+
+
+
+/* Modal (backgrunds-delen) */
+#modal {
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.glowBorder,
+#modal-container,
+input {
+    border: 2px solid rgba(203, 250, 244, 0.89);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(203, 250, 244, 0.89), 0 0 10px rgba(203, 250, 244, 0.89);
+}
+
+#modal button {
+    z-index: 10;
+    margin: 24px;
+    right: 0vw;
+    position: absolute;
+    /* float: right; */
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffc0a7;
+    background-color: rgb(231, 71, 22);
+    border: 3px solid rgb(255 146 78 / 72%);
+    box-shadow: 0px 0px 10px -3px rgb(231, 71, 22);
+}
+
+/* Modal Content */
+#modal-content p {
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: palegoldenrod;
+    text-transform: uppercase;
+}
+
+#modal-content {
+    display: flex;
+
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+  
+    perspective: 50px;
+    text-align: justify;
+
+}
+
+#modal-container {
+    position: relative;
+    background-color: #121313;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    color: #fabd35;
+    border-radius: 12px;
+}
+
+
+/*------------------------------- SCAN LINES EFFECT: ---------------------*/
+
+.scanlines {
+    overflow: hidden;
+    position: relative;
+}
+
+.scanlines:before,
+.scanlines:after {
+    display: block;
+    /* Kan bare fjerne den her*/
+    pointer-events: none;
+    content: "";
+    position: absolute;
+}
+
+.scanlines:before {
+    width: 100%;
+    height: 2px;
+    z-index: 2147483649;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.75;
+    animation: scanline 6s linear infinite;
+}
+
+.scanlines:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483648;
+    background: linear-gradient(to bottom,
+            transparent 50%,
+            rgba(0, 0, 0, 0.1) 51%);
+    background-size: 100% 6px;
+    animation: scanlines 3s steps(60) infinite;
+}
+
+.contentBoxScale {
+    padding: 24px;
+}
+
+@keyframes scanline {
+    0% {
+        transform: translate3d(0, 200000%, 0);
+    }
+}
+
+@keyframes scanlines {
+    0% {
+        background-position: 0 50%;
+    }
+}
+
+
+/* ------------------------- CRAWL EFFEKT ------------------------------*/
+
+.crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+
+.crawl> {
+    font-size: 90%;
+    text-align: center;
+}
+
+.crawl> h1 {
+    text-align: center;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 1000;
+    color: palegoldenrod;
+}
+
+@keyframes crawl {
+    0% {
+        top: 400px;
+        transform: rotateX(10deg) translateZ(80px) ;
+        opacity: 1;
+    }
+ 50%{
+    opacity: 1; /*Begynd at fade ud*/
+ }
+    100% {
+        top: -1000px;
+        transform: rotateX(20deg) translateZ(-200px) ;
+        opacity: 0;
+    }
+}
