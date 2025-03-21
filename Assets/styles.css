@@ -61,7 +61,6 @@ header {
 
 body {
     overflow-x: hidden;
-    /* Lidt en hacky lÃ¸sning men kunne ikke fikse overflow rodÃ¥rsagen*/
     width: 100%;
     background-color: black;
     margin: 0px;
@@ -268,7 +267,6 @@ html {
 .PaginationToolbar {
     display: flex;
     justify-content: space-between;
-    /* height: 40px; */
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -353,7 +351,6 @@ input {
     margin: 24px;
     right: 0vw;
     position: absolute;
-    /* float: right; */
     width: 48px;
     height: 48px;
     border-radius: 12px;
